@@ -1,0 +1,1 @@
+8/27/2024 - Initial GIT commit: installed pygame, created virtual environment, created constants.py and main.py, learned to draw screen and use an infinite while loop to constantly update the screen and use a conditional statement to check an event which detects when the close button of the window is pressed and closes the window.
