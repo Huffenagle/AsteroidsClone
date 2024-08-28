@@ -30,7 +30,14 @@ def main():
     while True:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
+                print("Quit game...")
                 return
+        
+        keys = pygame.key.get_pressed()
+
+        if keys[pygame.K_ESCAPE]:
+            print("Exited via escape...")
+            sys.exit()
             
         for game_obj in updatable:
             game_obj.update(dt)
@@ -39,10 +46,10 @@ def main():
             if asteroid.detect_collision(player):
                 print("Game over!")
                 sys.exit()
-                
+
             for shot in shots:
                 if asteroid.detect_collision(shot):
-                    asteroid.kill()
+                    asteroid.split()
                     shot.kill()
 
         screen.fill((0,0,0))
