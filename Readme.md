@@ -1,1 +1,3 @@
 8/27/2024 - Initial GIT commit: installed pygame, created virtual environment, created constants.py and main.py, learned to draw screen and use an infinite while loop to constantly update the screen and use a conditional statement to check an event which detects when the close button of the window is pressed and closes the window.
+
+8/27/2024 8:50 PM - Been working awhile through this module in the course.  So far I have gotten a rudimentary version of Asteroids working with Python.  Just finished implementing bullets, a timer which prevents the game becoming bullet hell, as well as destruction of asteroids as well as bullets once the two collide.  About to work on splitting larger asteroids into smaller ones once they are hit with a bullet.
